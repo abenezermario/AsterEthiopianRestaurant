@@ -79,10 +79,15 @@ form , input[type="button"] {
     padding-right: 50px;
     text-align: center;
     transition: transform .1s;
+    font-family: courier,arial,helvetica;
+    border-radius: 50px;
+    border-color: grey;
 }
 form, input[type="button"]:hover {
     background-color: rgba(207, 167, 167, 0.836);
     transform: scale(1.1);
     font-weight: bolder;
     text-transform: capitalize;
+    border-radius: 50px;
+    
 }
