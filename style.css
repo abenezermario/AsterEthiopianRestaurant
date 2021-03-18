@@ -1,0 +1,88 @@
+.box {
+    width: 900px;
+    float: right;
+    border: 1px solid none;
+}
+
+.box ul li {
+    width: 120px;
+    font-size: 20px;
+    float: left; 
+    margin: 50x auto;
+    text-align: center;
+    padding:20px;
+    font-family: courier,arial,helvetica;
+    transition: transform .2s;
+}
+
+.box ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+.box ul li:hover {
+    background-color: rgb(207, 167, 167);
+    transform: scale(1.2);
+}
+.box ul li a:hover {
+    color: white;  
+}
+body {
+    font-family:latha;
+    color: white;
+    background:url(foodBackground.jpg)no-repeat;
+    background-size: cover;
+}
+.wd {
+    width: 250px;
+    height: 800px;
+    background-color: rgb(207, 167, 167);
+    opacity: 0.9;
+    padding: 55px;
+    margin-right: 0px;
+    transition: transform .2s;
+    scale: ;
+    /* filter: drop-shadow(8px); */
+}
+.wd h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100px;
+     
+}
+h4{
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-weight: 100px;
+    font-size: larger; 
+    font-family: monospace;
+}
+
+.opt form{
+    background-color: rgba(207, 167, 167, 0.836);
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    margin: -14px auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    
+}
+form , input[type="button"] {
+    background-color: rgba(207, 167, 167, 0.836);
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    margin: 20px -18px auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    transition: transform .1s;
+}
+form, input[type="button"]:hover {
+    background-color: rgba(207, 167, 167, 0.836);
+    transform: scale(1.1);
+    font-weight: bolder;
+    text-transform: capitalize;
+}
