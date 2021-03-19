@@ -14,26 +14,30 @@
     padding:20px;
     font-family: courier,arial,helvetica;
     transition: transform .2s;
+    font-weight: 800;
 }
 
 .box ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-weight: 500;
 
 }
 .box ul li:hover {
     background-color: rgb(207, 167, 167);
-    font-weight: 500;
     transform: scale(1.2);
 }
 .box ul li a:hover {
-    color: white;  
+    color: white;
+    font-weight: 800;  
 }
-body {
+.main {
     font-family:latha;
     color: white;
-    background:url(foodBackground.jpg)no-repeat;
-    background-size: cover;
+    background-image:url(foodBackground.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
 }
 .wd {
     width: 250px;
@@ -91,6 +95,56 @@ form, input[type="button"]:hover {
     text-transform: capitalize;
     border-radius: 50px;
     
+}
+.anotherImage {
+    background-image: url(./secoondImage.jpg);
+    min-height: 500px;
+    min-width: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
+  .wdNext {
+    width: 250px;
+    height: 400px;
+    background-color: rgb(207, 167, 167);
+    opacity: 0.9;
+    padding: 55px;
+    margin-right: 0px;
+    transition: transform .2s;
+    float: right;
+  }
+  .wdNext h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100px;
+    margin: -10px auto;
+}
+.wdNext h4{
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-weight: 100px;
+    font-size: larger; 
+    font-family: monospace;
+}
+.otherInfo {
+      /* The image used */
+  background-image: url("./thirdImage.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* section {
     position: relative;
