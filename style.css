@@ -97,7 +97,7 @@ form, input[type="button"]:hover {
     
 }
 .anotherImage {
-    background-image: url(./secoondImage.jpg);
+    background-image: url('./buffet.jpg');
     min-height: 500px;
     min-width: 500px;
     background-attachment: fixed;
@@ -135,7 +135,9 @@ form, input[type="button"]:hover {
 }
 .otherInfo {
       /* The image used */
-  background-image: url("./thirdImage.jpg");
+  background-image: url("https://images.happycow.net/venues/1024/15/23/hcmp152366_835814.jpeg");
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
 
   /* Set a specific height */
   min-height: 500px;
@@ -145,6 +147,7 @@ form, input[type="button"]:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: blur(3);
 }
 /* section {
     position: relative;
