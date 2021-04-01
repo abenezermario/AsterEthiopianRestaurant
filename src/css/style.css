@@ -34,7 +34,7 @@
 .main {
     font-family:latha;
     color: white;
-    background-image:url(/Images/foodBackground.jpg);
+    background-image:url("/Images/foodBackground.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     /* background-attachment: scroll; */
