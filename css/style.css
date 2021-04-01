@@ -34,7 +34,7 @@
 .main {
     font-family:latha;
     color: white;
-    background-image:url("/Images/foodBackground.jpg");
+    background-image:url(../images/foodBackground.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     /* background-attachment: scroll; */
@@ -97,7 +97,7 @@ form, input[type="button"]:hover {
     
 }
 .anotherImage {
-    background-image: url('/Images/buffet.jpg');
+    background-image: url('../images/buffet.jpg');
     min-height: 500px;
     min-width: 500px;
     background-attachment: fixed;
