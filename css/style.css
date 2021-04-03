@@ -3,6 +3,7 @@
     width: 900px;
     float: right;
     border: 1px solid none;
+    overflow: hidden;
 }
 
 .box ul li {
@@ -20,7 +21,7 @@
 .box ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-weight: 500;
+    font-weight: 750;
 
 }
 .box ul li:hover {
@@ -33,7 +34,7 @@
 }
 .main {
     font-family:latha;
-    color: white;
+    color: rgb(0, 0, 0);
     background-image:url(../images/foodBackground.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -53,6 +54,7 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: 100px;
+    color: black;
      
 }
 h4{
@@ -61,6 +63,7 @@ h4{
     font-weight: 100px;
     font-size: larger; 
     font-family: monospace;
+    color: black;
 }
 
 .opt form{
@@ -72,6 +75,7 @@ h4{
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
+    
     
 }
 form , input[type="button"] {
@@ -125,6 +129,7 @@ form, input[type="button"]:hover {
     text-transform: uppercase;
     font-weight: 100px;
     margin: -10px auto;
+    color: black;
 }
 .wdNext h4{
     text-align: center;
