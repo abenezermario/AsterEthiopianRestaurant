@@ -81,7 +81,7 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 }
 .menu_content h4 {
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 800;
     border-bottom: 1px dashed #c0392b;
     line-height: 2;
     text-transform: capitalize;
