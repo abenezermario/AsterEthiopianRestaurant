@@ -1,78 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aster's Ethiopian Restaurant</title>
     <link rel="icon" type="image/svg+xml" href="./Images/Asters.jpg">
-    <link rel="stylesheet" href="./css/about.css"/>
-    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-    <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300'rel='stylesheet'type='text/css'"/>
-    <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Dancing+Script:700'rel='stylesheet'type='text/css'"/>
-    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.0.2/dist/tailwind.min.css">
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
 
 </head>
-<body>
-    <div class="row">
-        <div class="containers col-lg-6 col-md-6">
-          
-          <div class="pic">
-            <img src="https://www.austinchronicle.com/imager/b/original/463008/37ec/asters.jpg"/>
-          </div>
-          
-          <div class="box1"></div>
-          <div class="box2"></div>
-          
-          <div class="social1">
-            <i class="fa fa-facebook" aria-hidden="true"></i> 
-          </div>
-          <div class="social2">
-            <i class="fab fa-instagram"></i>
-          </div>
-          <div class="social3">
-            <i class="fa fa-codepen" aria-hidden="true"></i>
-          </div>
+<style>
+
+.marker {
+  background-image: url('./Images/mapbox-icon.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+</style>
+<body class="bg-white">
+    <!-- url('/img/hero-pattern.svg') -->
+    <div class="flex min-h-screen bg-gradient-to-r from-green-400 to-gray-500 hover:from-pink-500 hover:to-yellow-500 ...">
+
+        <!-- <div class="w-1/2 bg-cover md:block hidden" style="background-image:  url(https://www.austinchronicle.com/binary/17f4/food_Habesha2.jpg)"></div> -->
+        <!-- <div class="bg-no-repeat bg-right bg-cover max-w-max max-h-8 h-12 overflow-hidden">
+            <img src="log_in.webp" alt="hey">
+        </div> -->
+        <div class="flex flex-col w-full lg:w-2/3 justify-center">
+            <div class="container w-full px-4">
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full lg:w-6/12 px-4">
+                        <div
+                            class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
+                            <div class="flex-auto p-5 lg:p-10">
+                                <div class= "flex-auto p-5 lg:p-10 ...">
+                                
+                                    <iframe class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white justify-items-stretch ..." src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.239057169395!2d-97.72720398449555!3d30.287255381794683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5921b0c0583%3A0x5c8162557ce00d20!2sAster&#39;s%20Ethiopian%20Restaurant!5e0!3m2!1sen!2sus!4v1621146771070!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="content col-md-offset-6 col-lg-offset-6">
-          <center><h1 class="contentHead">ABOUT US</h1></center>
-          <h2><b>Food from the Birthplace of Humanity</b></h1>
-          <h2>Selam everyone, <br/><br/>
-            Welcome to Aster's Ethiopian Restaurant. We are thrilled to welcome you have you here.
-            
-            Aster's Ethiopian Restaurant is located in Austin, Texas we have been here for almost over 20years.<br>
-            We are really giving out our best to satisfy our customers with the Best dishes and and a warm welcome as <br>
-            As it has always been a tradition for us.
-            <h3><b>This are our hours:</b><br>
-              <p><b>
-                Tuesday- Thursday
-                11am - 9pm(CST)
-                  </b></p>
-              <p><b>
-                Friday & Saturday
-                11am - 10pm(CST)
-              </b></p>
-              <p><b>
-                Sunday
-                11am-9pm
-              <b></p>
-              <p>
-                <b>CLOSED MONDAY</b>
+        <div class="md:w-1/2 max-w-lg mx-auto my-24 px-4 py-5 shadow-none">
+
+            <div class="text-left p-0 font-sans">
+                
+                <h1 class="flex-auto text-gray-800 text-2xl font-medium font-extrabold">Food from the Birthplace of Humanity</h1>
+                <h3 class="p-1 text-gray-700 font-medium text-xl  text-center">ASTER ETHIOPIAN RESTAURANT</h3>
+            </div>
+            <p class="font-mono text-2xl py-8 text-extrabold font-extrabold">
+                Welcome to Aster's Ethiopian Restaurant. We are thrilled to welcome you have you here. Aster's Ethiopian Restaurant is located in Austin, Texas we have been here for almost over 20years.
+We are really giving out our best to satisfy our customers with the Best dishes and and a warm welcome as
+As it has always been a tradition for us.
               </p>
-              <p>
-                <b>PHONE NUMBERS:<br></b>
-                <b>512 469 5966</b><br>
-                <b>Cell(512) 786-9524</b>
-              </p>
-            </h3>
-            <br/><br/>
-            <!-- Show your L<span>&hearts;</span>VE if you like my pen. -->
-            <br/><br/>
-            <!--  -->
-          </h2>
+              <ul class="list-inside bg-rose-200 md:list-inside ...">
+                <p class="font-mono text-2xl text-extrabold font-extrabold">THIS ARE OUR HOURS</p>
+                <li>Tuesday- Thursday 11am - 9pm(CST)</li>
+                <li>Friday & Saturday 11am - 10pm(CST)</li>
+                <li>Sunday 11am-9pm</li>
+                <li class="font-mono text-2xl text-extrabold font-extrabold"> CLOSED MONDAY</li>
+                <li>PHONE NUMBERS:<br>
+                    <p font-mono text-gray-400>512 469 5966<br>
+                    Cell(512) 786-9524</p></li>
+              </ul>
         </div>
-        </div>   
-        
+
+
+    </div>
 </body>
 </html>
